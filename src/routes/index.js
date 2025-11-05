@@ -6,4 +6,4 @@ const router = Router();
 // ttes les recettes
 router.get("/", getRecipes);
 
-module.exports = router;
+module.exports = router; 

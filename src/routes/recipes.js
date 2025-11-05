@@ -1,5 +1,7 @@
 const {Router} = require("express");
 const { getRecipes, getRecipe, createRecipe, updateRecipe, deleteRecipe} = require("../controllers/recipeController");
+const { isAuthenticated, isAdmin } = require("../middlewares/authMiddleware");
+
 
 const router = Router();
 

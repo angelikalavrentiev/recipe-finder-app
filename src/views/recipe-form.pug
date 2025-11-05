@@ -2,3 +2,10 @@ extends layout
 
 block content
     main
+        h2 Ajouter une recette
+        form(action="/" method="POST")
+            label(for="title") Title:
+            input(type="text" name="title" id="title" required)
+            label(for="ingredients") Ingredients:
+            input(type="text" name="ingredients" id="ingredients")
+            button(type="submit") Créer 
